@@ -9,8 +9,8 @@ trimAAalignment <- function(al_mat, prop = 0.5) {
   al_mat[, keep_cols, drop = FALSE]
 }
 
-input_folder <- "/Users/qjs599/Desktop/phylostruct/phages/data/amino_seqs/fasta_amino_dedup"
-output_folder <- "/Users/qjs599/Desktop/phylostruct/phages/data/amino_seqs/fasta_amino_align"
+input_folder <- "/Users/qjs599/Desktop/phylostruct/phages/data/amino_seqs/fasta_amino_align"
+output_folder <- "/Users/qjs599/Desktop/phylostruct/phages/data/amino_seqs/amino_seqs_trim_12.9"
 if (!dir.exists(output_folder)) dir.create(output_folder)
 
 fasta_files <- list.files(input_folder, pattern = "\\.fasta$", full.names = TRUE)
